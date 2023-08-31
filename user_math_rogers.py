@@ -1,35 +1,29 @@
 """
-Purpose: Illustrate the math module and how to write
-defensive functions by trying them, 
-and if things don't work provide a custom message.
 
-Use try / except / finally whenever a valid function could cause an error
-e.g.,
-- a number is not valid such as a negative radius or age
-- a string is empty or missing
-- the requested resource could not be found
+Name: Curtis Rogers
+Date: 8/31/2023
 
-The math module includes:
-- pi
-- sin/cos/tan
-- factorial
-- sqrt for square root
-- cbrt (in 3.11) for cube root
-- comb(n,k) for combinations i.e.,
-    number of ways to choose k items from n items
-    w/out repetition and w/out order
-- perm(n,k) for permutations i.e.,
-    number of ways to choose k items from n items
-    w/out repetition and With order
+Purpose: Is to use the examples provided in Module 2 to create defensive functions
+and if they do not work to provide a custom message
 
-@ uses math module - for some advanced math
+
 
 """
-
 import math
 
 from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
+
+def get_area_of_field(height,width):
+    logger.info(f"CALLING get_field_area{height,width}")
+
+    try:
+        area = height * width
+        logger.info(f"The field area is {area}ft")
+        return area
+    except Exception as ex:
+        logger.error(f"Error: {ex}")
+        return None
 
 
 def get_circle_area_given_radius(radius):
@@ -47,39 +41,13 @@ def get_circle_area_given_radius(radius):
     logger.info(f"CALLING get_circle_area({radius})")
 
     try: 
-        area = 2 * math.pi * radius
+        area = 4 * math.pi * radius
         logger.info(f"The circle area is {area}")
         return area
     except Exception as ex:
         logger.error(f"Error: {ex}")
         return None
 
-
-def get_circle_areas_given_list(radius_list):
-    """
-    This function should return a list with the areas of each circle
-
-    Keyword arguments:
-    radius_list -- a list of radius values (items may be invalid)
-    """
-    logger.info(f"CALLING get_circle_area({radius_list})")
-
-    if len(radius_list) == 0:
-        logger.error("Please add some items to the list. Nothing to do.")
-        quit() # quit the program
-
-    area_list = [] # empty list to hold the areas
-
-    # for every element in the list passed in 
-    for r in radius_list:
-
-        try:
-            area = get_circle_area_given_radius(r)
-            logger.info(f"r = {r}, area={area}")
-            area_list.append(area)
-
-        except Exception as ex:
-            logger.error(f"radius = {r}, Error: {ex}")
 
 
 # -------------------------------------------------------------
@@ -93,31 +61,14 @@ def get_circle_areas_given_list(radius_list):
 if __name__ == "__main__":
 
     logger.info("Explore some functions in the math module")
-    logger.info(f"math.comb(5,1) = {math.comb(5,1)}")
-    logger.info(f"math.perm(5,1) = {math.perm(5,1)}")
-    logger.info(f"math.comb(5,3) = {math.comb(5,3)}")
-    logger.info(f"math.perm(5,3) = {math.perm(5,3)}")
-    logger.info(f"math.pi = {math.pi}")
-    logger.info(f"math.degrees(2 * math.pi) = {math.degrees(2 * math.pi)}")
-    logger.info(f"math.radians(180)         = {math.radians(180)}")
-    logger.info("")
-
-    logger.info("TRY: Call get_circle_area_given_radius() function with a different values.")
-    get_circle_area_given_radius(5)
-    get_circle_area_given_radius(-16)
-    get_circle_area_given_radius(math.inf)
-    get_circle_area_given_radius('five')
-    logger.info("")
-
-    logger.info("TRY: Call get_circle_areas_given_list() function with a list of GOOD values")
-    good_list = [5, 10, 25, 30, 45, 50]
-    get_circle_areas_given_list(good_list)
-    logger.info("")
+    logger.info(f"math.comb(2,1) = {math.comb(2,1)}")
+    logger.info(f"math.perm(2,1) = {math.perm(2,1)}")
 
 
-    logger.info("TRY: Call get_circle_areas_given_list() function with a list that may include BAD values")
-    bad_list = [-5, 0, math.inf, '30']
-    get_circle_areas_given_list(bad_list)
+    logger.info("TRY: Call get_area_of_field() function with different values.")
+    get_area_of_field(2,3)
+    get_area_of_field(345,137)
+
 
     print("Done. Please check the log file for more details.")
 
