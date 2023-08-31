@@ -26,15 +26,20 @@ def get_area_of_field(height,width):
         return None
 
 
+def get_total_points_scored(score_list):
+
+        logger.info(f"CALLING get_circle_area({score_list})")
+
+        try:
+            total = sum(score_list)
+            logger.info(f"Total points scored is {total}")
+            return total
+        except Exception as ex:
+            logger.error(f"Error: {ex}")
+            return None
+
+
 def get_circle_area_given_radius(radius):
-    """
-    Return area of a circle given the radius.
-
-    @param radius: the radius of the circle
-    @return: the area of the circle
-    @raise Exception: if radius is not a number
-
-    """
 
     # Use a try / except / finally block when something 
     # could go wrong
@@ -68,6 +73,11 @@ if __name__ == "__main__":
     logger.info("TRY: Call get_area_of_field() function with different values.")
     get_area_of_field(2,3)
     get_area_of_field(345,137)
+
+
+    logger.info("TRY: get_total.")
+    season_score_list = [5,3]
+    get_total_points_scored(season_score_list)
 
 
     print("Done. Please check the log file for more details.")
