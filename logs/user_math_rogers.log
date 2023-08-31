@@ -1,18 +1,24 @@
-2023-08-31 04:54:43,213.user_math_rogers.INFO ==================================================
-2023-08-31 04:54:43,213.user_math_rogers.INFO Today is 2023-08-31 at 04:54 AM
-2023-08-31 04:54:43,242.user_math_rogers.INFO Running on: nt Windows 10
-2023-08-31 04:54:43,242.user_math_rogers.INFO Python version:  3.11.4
-2023-08-31 04:54:43,242.user_math_rogers.INFO Python path: C:\Users\ctrog\AppData\Local\Programs\Python\Python311
-2023-08-31 04:54:43,243.user_math_rogers.INFO Working dir: C:\Users\ctrog\OneDrive\Documents\Data Analytics Masters\GIT Hub\datafun-02-functions
-2023-08-31 04:54:43,243.user_math_rogers.INFO ==================================================
-2023-08-31 04:54:43,244.user_math_rogers.INFO Explore some functions in the math module
-2023-08-31 04:54:43,244.user_math_rogers.INFO math.comb(2,1) = 2
-2023-08-31 04:54:43,245.user_math_rogers.INFO math.perm(2,1) = 2
-2023-08-31 04:54:43,245.user_math_rogers.INFO TRY: Call get_area_of_field() function with different values.
-2023-08-31 04:54:43,245.user_math_rogers.INFO CALLING get_field_area(2, 3)
-2023-08-31 04:54:43,246.user_math_rogers.INFO The field area is 6ft
-2023-08-31 04:54:43,246.user_math_rogers.INFO CALLING get_field_area(345, 137)
-2023-08-31 04:54:43,247.user_math_rogers.INFO The field area is 47265ft
-2023-08-31 04:54:43,247.user_math_rogers.INFO TRY: get_total.
-2023-08-31 04:54:43,247.user_math_rogers.INFO CALLING get_circle_area([5, 3])
-2023-08-31 04:54:43,248.user_math_rogers.INFO Total points scored is 8
+2023-08-31 13:10:49,546.user_math_rogers.INFO ==================================================
+2023-08-31 13:10:49,546.user_math_rogers.INFO Today is 2023-08-31 at 01:10 PM
+2023-08-31 13:10:49,594.user_math_rogers.INFO Running on: nt Windows 10
+2023-08-31 13:10:49,594.user_math_rogers.INFO Python version:  3.11.4
+2023-08-31 13:10:49,594.user_math_rogers.INFO Python path: C:\Users\ctrog\AppData\Local\Programs\Python\Python311
+2023-08-31 13:10:49,594.user_math_rogers.INFO Working dir: C:\Users\ctrog\OneDrive\Documents\Data Analytics Masters\GIT Hub\datafun-02-functions
+2023-08-31 13:10:49,602.user_math_rogers.INFO ==================================================
+2023-08-31 13:10:49,602.user_math_rogers.INFO Explore some functions in the math module
+2023-08-31 13:10:49,602.user_math_rogers.INFO math.comb(2,1) = 2
+2023-08-31 13:10:49,602.user_math_rogers.INFO math.perm(2,1) = 2
+2023-08-31 13:10:49,602.user_math_rogers.INFO TRY: Call get_area_of_field() function with different values.
+2023-08-31 13:10:49,602.user_math_rogers.INFO CALLING get_field_area(2, 3)
+2023-08-31 13:10:49,602.user_math_rogers.INFO The field area is 6ft
+2023-08-31 13:10:49,602.user_math_rogers.INFO CALLING get_field_area(345, 137)
+2023-08-31 13:10:49,602.user_math_rogers.INFO The field area is 47265ft
+2023-08-31 13:10:49,602.user_math_rogers.INFO TRY: get_total_point.
+2023-08-31 13:10:49,602.user_math_rogers.INFO CALLING get_total_points_scored([5, 3])
+2023-08-31 13:10:49,602.user_math_rogers.INFO Total points scored is 8
+2023-08-31 13:10:49,602.user_math_rogers.INFO TRY: get_total_sales_cost
+2023-08-31 13:10:49,602.user_math_rogers.INFO CAllING get_total_sale_cost(10)
+2023-08-31 13:10:49,602.user_math_rogers.INFO Total sale cost is 8439.199999999999
+2023-08-31 13:10:49,602.user_math_rogers.INFO TRY: get_average_points_per_game
+2023-08-31 13:10:49,602.user_math_rogers.INFO CALLING: get_average_points_per_game(2)
+2023-08-31 13:10:49,602.user_math_rogers.INFO Total points scored per game is 4.0

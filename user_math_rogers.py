@@ -28,7 +28,7 @@ def get_area_of_field(height,width):
 
 def get_total_points_scored(score_list):
 
-        logger.info(f"CALLING get_circle_area({score_list})")
+        logger.info(f"CALLING get_total_points_scored({score_list})")
 
         try:
             total = sum(score_list)
@@ -37,32 +37,45 @@ def get_total_points_scored(score_list):
         except Exception as ex:
             logger.error(f"Error: {ex}")
             return None
+        
+def get_total_sale_cost(tickets_bought):
+     logger.info(f"CAllING get_total_sale_cost({tickets_bought})")
+
+     price = 120.56
+     tax = .07
+
+     try:
+        sale_total = tickets_bought * price *tax *100
+        logger.info(f"Total sale cost is {sale_total}")
+        return sale_total
+     except Exception as ex:
+            logger.error(f"Error: {ex}")
+            return None
+     
+
+def get_average_points_per_game(games_played):
+     logger.info(f"CALLING: get_average_points_per_game({games_played})")
+
+     try:
+          average_points = sum(score_list) / games_played
+          logger.info(f"Average points scored per game is {average_points}")
+          return average_points
+     except Exception as ex:
+            logger.error(f"Error: {ex}")
+            return None
+     
 
 
-def get_circle_area_given_radius(radius):
 
-    # Use a try / except / finally block when something 
-    # could go wrong
-    logger.info(f"CALLING get_circle_area({radius})")
 
-    try: 
-        area = 4 * math.pi * radius
-        logger.info(f"The circle area is {area}")
-        return area
-    except Exception as ex:
-        logger.error(f"Error: {ex}")
-        return None
+
 
 
 
 # -------------------------------------------------------------
 # Call some functions and execute code!
 
-# This is very standard Python - it means
-# "If this module is the one being executed, i.e., the main module"
-# Literally: "if this module name == the name of the main running module"
-# (as opposed to being imported by another module like we do the logger),
-# then, follow these instructions.
+
 if __name__ == "__main__":
 
     logger.info("Explore some functions in the math module")
@@ -75,9 +88,15 @@ if __name__ == "__main__":
     get_area_of_field(345,137)
 
 
-    logger.info("TRY: get_total.")
-    season_score_list = [5,3]
-    get_total_points_scored(season_score_list)
+    logger.info("TRY: get_total_point.")
+    score_list = [5,3]
+    get_total_points_scored(score_list)
+
+    logger.info("TRY: get_total_sales_cost")
+    get_total_sale_cost(10)
+
+    logger.info("TRY: get_average_points_per_game")
+    get_average_points_per_game(2)
 
 
     print("Done. Please check the log file for more details.")
