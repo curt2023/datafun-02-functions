@@ -1,6 +1,6 @@
 """
 
-Purpose: Illustrate the built-in statistics module.
+Purpose: Illustrate the built-in statistics of soccer games played during the year.
 
 VS Code Menu / View / Command Palette / Python Interpreter
 Must be 3.10 or greater to get the correlation and linear regression.
@@ -59,7 +59,7 @@ if len(xgames) != len(yscores):
 
 
 
-logger.info("How'd we do? Does this make sense given the data?")
+logger.info("YEEPEEE I WAS ABLE TO COMPLETE THESE TASKS!!!!")
 
 logger.info(f"Total points is {total_score}")
 logger.info(f"Games played {number_games}")
