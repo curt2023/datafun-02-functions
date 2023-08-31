@@ -1,0 +1,16 @@
+2023-08-31 14:04:23,068.user_easy_stats_rogers.INFO ==================================================
+2023-08-31 14:04:23,076.user_easy_stats_rogers.INFO Today is 2023-08-31 at 02:04 PM
+2023-08-31 14:04:23,101.user_easy_stats_rogers.INFO Running on: nt Windows 10
+2023-08-31 14:04:23,101.user_easy_stats_rogers.INFO Python version:  3.11.4
+2023-08-31 14:04:23,101.user_easy_stats_rogers.INFO Python path: C:\Users\ctrog\AppData\Local\Programs\Python\Python311
+2023-08-31 14:04:23,101.user_easy_stats_rogers.INFO Working dir: C:\Users\ctrog\OneDrive\Documents\Data Analytics Masters\GIT Hub\datafun-02-functions
+2023-08-31 14:04:23,109.user_easy_stats_rogers.INFO ==================================================
+2023-08-31 14:04:23,117.user_easy_stats_rogers.INFO How'd we do? Does this make sense given the data?
+2023-08-31 14:04:23,117.user_easy_stats_rogers.INFO Total points is 70
+2023-08-31 14:04:23,117.user_easy_stats_rogers.INFO Games played 20
+2023-08-31 14:04:23,117.user_easy_stats_rogers.INFO mean   = 3.5
+2023-08-31 14:04:23,117.user_easy_stats_rogers.INFO median = 3.0
+2023-08-31 14:04:23,117.user_easy_stats_rogers.INFO mode   = 3.0
+2023-08-31 14:04:23,125.user_easy_stats_rogers.INFO var    = 2.58
+2023-08-31 14:04:23,125.user_easy_stats_rogers.INFO stdev  = 1.61
+2023-08-31 14:04:23,125.user_easy_stats_rogers.INFO lowest = 1

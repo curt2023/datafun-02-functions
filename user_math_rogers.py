@@ -46,7 +46,7 @@ def get_total_sale_cost(tickets_bought):
 
      try:
         sale_total = tickets_bought * price *tax *100
-        logger.info(f"Total sale cost is {sale_total}")
+        logger.info(f"Total sale cost is {sale_total:.2f}")
         return sale_total
      except Exception as ex:
             logger.error(f"Error: {ex}")
@@ -58,7 +58,7 @@ def get_average_points_per_game(games_played):
 
      try:
           average_points = sum(score_list) / games_played
-          logger.info(f"Average points scored per game is {average_points}")
+          logger.info(f"Average points scored per game is {average_points:.2f}")
           return average_points
      except Exception as ex:
             logger.error(f"Error: {ex}")
