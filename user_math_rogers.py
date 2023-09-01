@@ -31,8 +31,8 @@ def get_total_points_scored(score_list):
         logger.info(f"CALLING get_total_points_scored({score_list})")
 
         try:
-            total = sum(score_list)
-            logger.info(f"Total points scored is {total}")
+            total = math.fsum(score_list)
+            logger.info(f"Total points scored is {total:.0f}")
             return total
         except Exception as ex:
             logger.error(f"Error: {ex}")

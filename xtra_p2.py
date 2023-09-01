@@ -10,28 +10,28 @@ Log the result of each function just before you return the result
  UNIT TESTS BELOW - SPECIFY CORRECT BEHAVIOR
  ----------------------------------------------------------
 
->>> sum_two(1,2)
+ sum_two(1,2)
 3
 
->>> sum_two("hello"," world")
+ sum_two("hello"," world")
 'hello world'
 
->>> sum_rectangle_list( [1,1,3,3] )
+ sum_rectangle_list( [1,1,3,3] )
 8
 
->>> transform_using_keyword_args_with_default_values()
+ transform_using_keyword_args_with_default_values()
 'bea'
 
->>> transform_using_keyword_args_with_default_values(reverse=True)
+transform_using_keyword_args_with_default_values(reverse=True)
 'aeb'
 
->>> transform_using_keyword_args_with_default_values(input="hello", reverse=True)
+ transform_using_keyword_args_with_default_values(input="hello", reverse=True)
 'leh'
 
->>> sum_any_using_args(1,1,1,2)
+ sum_any_using_args(1,1,1,2)
 5
 
->>> sum_any_with_keyword_arguments_kwargs(a=1,b=2,c=3)
+ sum_any_with_keyword_arguments_kwargs(a=1,b=2,c=3)
 6
 
 @uses doctest - to verify our functions are correct
@@ -50,21 +50,36 @@ logger, logname = setup_logger(__file__)
 
 
 # TODO: Fix this function to get just the first 3 letters (possibly reversed)
-def transform_using_keyword_args_with_default_values(input="bearcat", reverse=False):
-    '''Return a string with just the first 3 letters of input string. 
+def transform_using_keyword_args_with_default_values(input="bearcat", reverse=True):
+     
+     logger.info(f"CALLING transform_using_keyword_args_with_default_values(input={input},reverse={reverse})")
+
+
+     first_three = (input[0:3])
+     result = (first_three[::-1])
+
+
+
+     logger.info(f"The first 3 characters is {first_three}")
+     logger.info(f"the reversed first 3 letters is {result}")
+
+    
+    
+
+     return result
+
+   
+'''Return a string with just the first 3 letters of input string. 
     If reverse is True, reverse the first 3 letters. 
     If reverse is omitted or False, return the first 3 letters reversed. 
     @kwargs:
         input: a string, default "bearcat"
         reverse: a boolean, default False'''
     
-    s = f"CALLING transform_using_keyword_args_with_default_values(input={input}, reverse={reverse})"
-    logger.info(s)
+    
+    
 
-    result = input
 
-    logger.info(f"RETURNING {result}")
-    return result
 
 
 
@@ -82,6 +97,8 @@ if __name__ == "__main__":
     logger.info("===========================================================")
     logger.info("Running doctest.testmod() function to unit test our code")
     logger.info("===========================================================")
+    logger.info("Testing the function")
+    transform_using_keyword_args_with_default_values()
 
     # Run doctest and log the results
 

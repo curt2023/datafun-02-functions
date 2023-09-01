@@ -126,7 +126,7 @@ if __name__ == "__main__":
 
     name1 = "Kyson"
     units1 = "pts"
-    data1 = [1,0,0,0,4,,3,3,2]
+    data1 = [1,0,3,7,6,5,2,1]
 
     object1 = NumericSeries(name1, units1, data1)
 

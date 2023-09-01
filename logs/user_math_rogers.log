@@ -1,24 +1,24 @@
-2023-08-31 14:09:17,072.user_math_rogers.INFO ==================================================
-2023-08-31 14:09:17,072.user_math_rogers.INFO Today is 2023-08-31 at 02:09 PM
-2023-08-31 14:09:17,104.user_math_rogers.INFO Running on: nt Windows 10
-2023-08-31 14:09:17,104.user_math_rogers.INFO Python version:  3.11.4
-2023-08-31 14:09:17,104.user_math_rogers.INFO Python path: C:\Users\ctrog\AppData\Local\Programs\Python\Python311
-2023-08-31 14:09:17,104.user_math_rogers.INFO Working dir: C:\Users\ctrog\OneDrive\Documents\Data Analytics Masters\GIT Hub\datafun-02-functions
-2023-08-31 14:09:17,104.user_math_rogers.INFO ==================================================
-2023-08-31 14:09:17,104.user_math_rogers.INFO Explore some functions in the math module
-2023-08-31 14:09:17,104.user_math_rogers.INFO math.comb(2,1) = 2
-2023-08-31 14:09:17,104.user_math_rogers.INFO math.perm(2,1) = 2
-2023-08-31 14:09:17,104.user_math_rogers.INFO TRY: Call get_area_of_field() function with different values.
-2023-08-31 14:09:17,104.user_math_rogers.INFO CALLING get_field_area(2, 3)
-2023-08-31 14:09:17,104.user_math_rogers.INFO The field area is 6ft
-2023-08-31 14:09:17,112.user_math_rogers.INFO CALLING get_field_area(345, 137)
-2023-08-31 14:09:17,112.user_math_rogers.INFO The field area is 47265ft
-2023-08-31 14:09:17,112.user_math_rogers.INFO TRY: get_total_point.
-2023-08-31 14:09:17,112.user_math_rogers.INFO CALLING get_total_points_scored([5, 3])
-2023-08-31 14:09:17,112.user_math_rogers.INFO Total points scored is 8
-2023-08-31 14:09:17,112.user_math_rogers.INFO TRY: get_total_sales_cost
-2023-08-31 14:09:17,112.user_math_rogers.INFO CAllING get_total_sale_cost(10)
-2023-08-31 14:09:17,112.user_math_rogers.INFO Total sale cost is 8439.20
-2023-08-31 14:09:17,112.user_math_rogers.INFO TRY: get_average_points_per_game
-2023-08-31 14:09:17,112.user_math_rogers.INFO CALLING: get_average_points_per_game(2)
-2023-08-31 14:09:17,112.user_math_rogers.INFO Average points scored per game is 4.00
+2023-09-01 03:00:10,076.user_math_rogers.INFO ==================================================
+2023-09-01 03:00:10,076.user_math_rogers.INFO Today is 2023-09-01 at 03:00 AM
+2023-09-01 03:00:10,108.user_math_rogers.INFO Running on: nt Windows 10
+2023-09-01 03:00:10,108.user_math_rogers.INFO Python version:  3.11.4
+2023-09-01 03:00:10,108.user_math_rogers.INFO Python path: C:\Users\ctrog\AppData\Local\Programs\Python\Python311
+2023-09-01 03:00:10,108.user_math_rogers.INFO Working dir: C:\Users\ctrog\OneDrive\Documents\Data Analytics Masters\GIT Hub\datafun-02-functions
+2023-09-01 03:00:10,108.user_math_rogers.INFO ==================================================
+2023-09-01 03:00:10,108.user_math_rogers.INFO Explore some functions in the math module
+2023-09-01 03:00:10,116.user_math_rogers.INFO math.comb(2,1) = 2
+2023-09-01 03:00:10,116.user_math_rogers.INFO math.perm(2,1) = 2
+2023-09-01 03:00:10,116.user_math_rogers.INFO TRY: Call get_area_of_field() function with different values.
+2023-09-01 03:00:10,116.user_math_rogers.INFO CALLING get_field_area(2, 3)
+2023-09-01 03:00:10,116.user_math_rogers.INFO The field area is 6ft
+2023-09-01 03:00:10,116.user_math_rogers.INFO CALLING get_field_area(345, 137)
+2023-09-01 03:00:10,116.user_math_rogers.INFO The field area is 47265ft
+2023-09-01 03:00:10,116.user_math_rogers.INFO TRY: get_total_point.
+2023-09-01 03:00:10,116.user_math_rogers.INFO CALLING get_total_points_scored([5, 3])
+2023-09-01 03:00:10,116.user_math_rogers.INFO Total points scored is 8
+2023-09-01 03:00:10,116.user_math_rogers.INFO TRY: get_total_sales_cost
+2023-09-01 03:00:10,116.user_math_rogers.INFO CAllING get_total_sale_cost(10)
+2023-09-01 03:00:10,116.user_math_rogers.INFO Total sale cost is 8439.20
+2023-09-01 03:00:10,116.user_math_rogers.INFO TRY: get_average_points_per_game
+2023-09-01 03:00:10,116.user_math_rogers.INFO CALLING: get_average_points_per_game(2)
+2023-09-01 03:00:10,116.user_math_rogers.INFO Average points scored per game is 4.00
