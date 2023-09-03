@@ -10,34 +10,37 @@ Log the result of each function just before you return the result
  UNIT TESTS BELOW - SPECIFY CORRECT BEHAVIOR
  ----------------------------------------------------------
 
- sum_two(1,2)
+>>> sum_two(1,2)
 3
 
- sum_two("hello"," world")
+>>> sum_two("hello"," world")
 'hello world'
 
- sum_rectangle_list( [1,1,3,3] )
+>>> sum_rectangle_list( [1,1,3,3] )
 8
 
- transform_using_keyword_args_with_default_values()
+>>> transform_using_keyword_args_with_default_values()
 'bea'
 
-transform_using_keyword_args_with_default_values(reverse=True)
+>>> transform_using_keyword_args_with_default_values(reverse=True)
 'aeb'
 
- transform_using_keyword_args_with_default_values(input="hello", reverse=True)
+>>> transform_using_keyword_args_with_default_values(input="hello", reverse=True)
 'leh'
 
- sum_any_using_args(1,1,1,2)
+>>> sum_any_using_args(1,1,1,2)
 5
 
- sum_any_with_keyword_arguments_kwargs(a=1,b=2,c=3)
+>>> sum_any_with_keyword_arguments_kwargs(a=1,b=2,c=3)
 6
 
 @uses doctest - to verify our functions are correct
 """
 
 import doctest
+import math
+import statistics
+
 
 from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
@@ -50,23 +53,59 @@ logger, logname = setup_logger(__file__)
 
 
 # TODO: Fix this function to get just the first 3 letters (possibly reversed)
-def transform_using_keyword_args_with_default_values(input="bearcat", reverse=True):
+
+def sum_two(value1,value2):
+    logger.info(f"CAllING sum_two{value1,value2}")
+
+    result = value1+value2
+
+    logger.info(f"The result is {result}")
+
+    return result
+
+
+
+def transform_using_keyword_args_with_default_values(input="bearcat", reverse=False):
      
      logger.info(f"CALLING transform_using_keyword_args_with_default_values(input={input},reverse={reverse})")
 
+     result = (input[0:3])
+     if reverse:
+         result = (input[2::-1])
 
-     first_three = (input[0:3])
-     result = (first_three[::-1])
-
-
-
-     logger.info(f"The first 3 characters is {first_three}")
-     logger.info(f"the reversed first 3 letters is {result}")
-
-    
-    
+     logger.info(f"the result is {result}")
 
      return result
+
+def sum_any_using_args(*args):
+    logger.info(f"CAllING sum_any_using_args {args}")
+
+    result = sum(args)
+
+    logger.info(f"The result is {result}")
+
+    return result
+
+def sum_any_with_keyword_arguments_kwargs(**kwargs):
+    logger.info(f"CAllING sum_any_using_args {kwargs}")
+
+    result = sum(kwargs.values())
+
+    logger.info(f"The result is {result}")
+
+    return result
+
+def sum_rectangle_list(list):
+    
+    logger.info(f"CAllING sum_rectangle_list{list}" )
+
+    result = sum(list)
+
+    logger.info(f"The result is {result}")
+
+    return result
+
+
 
    
 '''Return a string with just the first 3 letters of input string. 
@@ -99,6 +138,12 @@ if __name__ == "__main__":
     logger.info("===========================================================")
     logger.info("Testing the function")
     transform_using_keyword_args_with_default_values()
+    sum_two(1,2)
+    sum_two("hello"," world")
+    sum_any_using_args(1,1,1,2)
+    sum_any_with_keyword_arguments_kwargs(a=1,b=2,c=3)
+    sum_rectangle_list([1,1,3,3])
+
 
     # Run doctest and log the results
 
